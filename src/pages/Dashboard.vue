@@ -191,7 +191,10 @@ const nextCategory = () => {
                             </div>
                         </template>
                         <SplideSlide v-for="(category, index) in categories" :key="index">
-                            <div class="category__receipt-list" :class="category.name">
+                            <div
+                                class="category__receipt-list"
+                                :class="category.name.toLowerCase()"
+                            >
                                 <div class="category__background">
                                     <img src="background.png" alt="Background" />
                                 </div>
