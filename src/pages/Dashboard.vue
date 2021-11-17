@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from 'vue'
+import Navbar from '../components/Navbar.vue'
+import Banner from '../components/Banner.vue'
 
 const options =
 {
@@ -114,43 +116,7 @@ const nextCategory = () => {
 
 </script>
 <template>
-    <div class="navbar__wrapper">
-        <div class="container">
-            <div class="navbar">
-                <div class="navbar__logo">
-                    <img src="/logo.png" alt="Elemes ID" />
-                </div>
-                <div class="navbar__menu">
-                    <div class="navbar__menu-list">
-                        <router-link to="/">Home</router-link>
-                    </div>
-                    <div class="navbar__menu-list">
-                        <router-link to="/">About</router-link>
-                    </div>
-                    <div class="navbar__menu-list">
-                        <router-link to="/">
-                            Promotions
-                            <div class="navbar__menu-sup">HOT</div>
-                        </router-link>
-                    </div>
-                    <div class="navbar__menu-list">
-                        <router-link to="/">Blogs</router-link>
-                    </div>
-                    <div class="navbar__menu-list">
-                        <router-link to="/">Contact Us</router-link>
-                    </div>
-                </div>
-                <div class="navbar__auth">
-                    <div class="navbar__login">
-                        <router-link to="/">Masuk</router-link>
-                    </div>
-                    <div class="navbar__sign-up">
-                        <router-link to="/">Daftar Sekarang</router-link>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <Navbar />
 
     <div class="banner__background">
         <img src="/background.png" alt="Background" />
@@ -158,30 +124,7 @@ const nextCategory = () => {
 
     <div class="content__wrapper">
         <div class="container">
-            <div class="banner__wrapper">
-                <div class="banner__content">
-                    <div class="banner__title">
-                        <span>Good Food Us Good Mood</span>
-                    </div>
-                    <div class="banner__image-mobile">
-                        <img src="banner-mobile.png" alt="Banner mobile" />
-                    </div>
-                    <div class="banner__description">
-                        <span>I would think that conserving our natural resources should be a conservative position: Not to waste food, and not to throw away a lot of the food that we buy.</span>
-                    </div>
-                    <div class="banner__button">
-                        <div class="banner__sign-up">
-                            <router-link to="/">Daftar Sekarang</router-link>
-                        </div>
-                        <div class="banner__about-us">
-                            <router-link to="/">About Us</router-link>
-                        </div>
-                    </div>
-                </div>
-                <div class="banner__image">
-                    <img src="banner.png" alt="Banner" />
-                </div>
-            </div>
+            <Banner />
 
             <div class="category__wrapper">
                 <div class="category__header">
@@ -373,67 +316,6 @@ const nextCategory = () => {
 </template>
 
 <style scoped>
-.navbar__wrapper {
-    padding: 1rem 2rem;
-    position: relative;
-    z-index: 9;
-}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar a {
-    color: black;
-    text-decoration: none;
-}
-.navbar__logo img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.navbar__menu {
-    font-size: 14px;
-    display: flex;
-    gap: 32px;
-    align-items: center;
-}
-
-.navbar__menu a {
-    position: relative;
-}
-
-.navbar__menu-sup {
-    position: absolute;
-    top: -1.3rem;
-    right: -1rem;
-    font-size: 8px;
-    color: white;
-    padding: 4px 12px;
-    font-weight: bold;
-    background: #e7462d;
-    border-radius: 9px;
-}
-.navbar__auth {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-}
-
-.navbar__login {
-    font-weight: 500;
-}
-
-.navbar__sign-up {
-    padding: 10px 20px;
-    background: #8bac3e;
-    border-radius: 50px;
-}
-
-.navbar__sign-up a {
-    color: white;
-}
-
 .banner__background {
     position: absolute;
     top: 0;
@@ -448,7 +330,6 @@ const nextCategory = () => {
     height: 700px;
     object-fit: cover;
 }
-
 .content__wrapper {
     position: relative;
     z-index: 9;
@@ -456,76 +337,6 @@ const nextCategory = () => {
 
 .content__wrapper .container {
     overflow: hidden;
-}
-.banner__wrapper {
-    display: flex;
-    gap: 2rem;
-    padding: 1rem;
-    align-items: center;
-}
-
-.banner__title {
-    font-size: 64px;
-    color: #8bac3e;
-    font-weight: 500;
-    line-height: 64px;
-    margin-bottom: 32px;
-}
-
-.banner__image-mobile {
-    display: none;
-}
-
-.banner__image-mobile img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.banner__description {
-    font-size: 18px;
-    line-height: 29px;
-    margin-bottom: 1.5rem;
-}
-
-.banner__button {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.banner__sign-up {
-    background: #8bac3e;
-    padding: 10px 20px;
-    border-radius: 25px;
-    box-shadow: 0 0 13px 3px lightgrey;
-}
-.banner__sign-up a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.banner__about-us {
-    background: #f2f2f2;
-    padding: 10px 20px;
-    border-radius: 25px;
-}
-
-.banner__about-us a {
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.banner__image {
-    flex: none;
-}
-
-.banner__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .category__wrapper {
@@ -845,10 +656,6 @@ const nextCategory = () => {
 }
 
 @media only screen and (max-width: 1365px) {
-    .banner__image img {
-        width: 400px;
-    }
-
     .trending__receipt {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -860,22 +667,6 @@ const nextCategory = () => {
 }
 
 @media only screen and (max-width: 1023px) {
-    .navbar__menu {
-        display: none;
-    }
-
-    .banner__wrapper {
-        padding: 4rem 1rem 1rem;
-    }
-
-    .banner__image-mobile {
-        display: block;
-    }
-
-    .banner__image {
-        display: none;
-    }
-
     .category__carousel:deep() .splide__custom-arrows {
         display: none;
     }
@@ -899,31 +690,6 @@ const nextCategory = () => {
 }
 
 @media only screen and (max-width: 767px) {
-    .navbar__wrapper {
-        padding: 1rem 0.2rem;
-        background: white;
-    }
-    .navbar {
-        padding: 0.5rem;
-    }
-    .navbar__logo img {
-        width: 130px;
-    }
-    .navbar__login {
-        display: none;
-    }
-    .navbar__sign-up {
-        font-size: 12px;
-        padding: 8px 13px;
-    }
-    .banner__wrapper {
-        padding: 3rem 0.5rem 1rem;
-    }
-    .banner__title {
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
-
     .category__wrapper,
     .trending__wrapper {
         padding: 2rem 0.5rem;
