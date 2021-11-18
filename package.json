@@ -4,9 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview",
-    "postinstall": "npm run build",
-    "start": "node server.js"
+    "serve": "vite preview"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
