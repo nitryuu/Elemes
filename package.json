@@ -9,11 +9,10 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "@splidejs/vue-splide": "^0.5.10",
     "express": "^4.17.1",
-    "vite": "^2.6.4",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12",
+    "@splidejs/vue-splide": "^0.5.10",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
@@ -21,6 +20,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.0-5"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.9.3"
+    "@vitejs/plugin-vue": "^1.9.3",
+    "vite": "^2.6.4"
   }
 }
