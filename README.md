@@ -1,7 +1,22 @@
-# Vue 3 + Vite
+# Elemes.id Challenge Test
+  
+## Project setup
+```
+npm install
+npm run dev
+```
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Deploy to Heroku
+```
 
-## Recommended IDE Setup
+Make sure you have Heroku CLI installed on your machine and follow these steps:
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+1. open your terminal
+2. heroku apps:create <app-name>
+3. heroku remote:set <app-name>
+4. git init
+5. git commit 'm 'deploy to heroku'
+6. git push heroku master
+7. open your app in <app-name>.herokuapp.com
+
+```
