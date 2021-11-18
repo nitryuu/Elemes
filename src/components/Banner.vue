@@ -5,7 +5,7 @@
                 <span>Good Food Us Good Mood</span>
             </div>
             <div class="banner__image-mobile">
-                <img src="banner-mobile.png" alt="Banner mobile" />
+                <img src="/banner-mobile.png" alt="Banner mobile" />
             </div>
             <div class="banner__description">
                 <span>I would think that conserving our natural resources should be a conservative position: Not to waste food, and not to throw away a lot of the food that we buy.</span>
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="banner__image">
-            <img src="banner.png" alt="Banner" />
+            <img src="/banner.png" alt="Banner" />
         </div>
     </div>
 </template>

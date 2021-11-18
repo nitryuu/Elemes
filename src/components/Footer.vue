@@ -9,7 +9,7 @@ defineProps({
         <div class="footer">
             <div class="footer__company">
                 <div class="footer__logo">
-                    <img src="logo.png" alt="Elemes.id" />
+                    <img src="/logo.png" alt="Elemes.id" />
                 </div>
                 <div class="footer__address">
                     <span>Jl. Prof. DR. Satrio No.7, RT.3/RW.3, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12950</span>

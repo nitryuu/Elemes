@@ -72,7 +72,7 @@ const fullRate = 5
                 :key="index"
             >
                 <div class="trending__background">
-                    <img src="background.png" alt="Background" />
+                    <img src="/background.png" alt="Background" />
                 </div>
                 <div class="trending__image">
                     <img :src="item.image" :alt="item.name" />
@@ -86,10 +86,10 @@ const fullRate = 5
                     </div>
                     <div class="trending__rating">
                         <span v-for="rate in item.rating" :key="rate">
-                            <img src="stars-checked.png" alt="stars checked" />
+                            <img src="/stars-checked.png" alt="stars checked" />
                         </span>
                         <span v-for="rate in (fullRate - item.rating)" :key="rate">
-                            <img src="stars.png" alt="stars" />
+                            <img src="/stars.png" alt="stars" />
                         </span>
                     </div>
                 </div>

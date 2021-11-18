@@ -52,19 +52,19 @@ const nextCategory = () => {
                 <template #after-track>
                     <div class="splide__custom-arrows">
                         <button class="btn splide__custom-arrow" @click="prevCategory">
-                            <img src="prev-arrow.svg" alt="Previous Arrow" />
+                            <img src="/prev-arrow.svg" alt="Previous Arrow" />
                             Prev
                         </button>
                         <button class="btn splide__custom-arrow" @click="nextCategory">
                             Next
-                            <img src="next-arrow.svg" alt="Next Arrow" />
+                            <img src="/next-arrow.svg" alt="Next Arrow" />
                         </button>
                     </div>
                 </template>
                 <SplideSlide v-for="(category, index) in categories" :key="index">
                     <div class="category__receipt-list" :class="category.name.toLowerCase()">
                         <div class="category__background">
-                            <img src="background.png" alt="Background" />
+                            <img src="/background.png" alt="Background" />
                         </div>
                         <div class="category__image">
                             <img :src="category.image" :alt="category.name" />
