@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "postinstall": "vite build",
+    "postinstall": "npm run build",
     "start": "node server.js"
   },
   "dependencies": {
